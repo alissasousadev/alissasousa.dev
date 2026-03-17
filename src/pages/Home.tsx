@@ -1,23 +1,33 @@
-import Navbar from "../components/layout/Navbar"
-import Footer from "../components/layout/Footer"
-import Hero from "../components/sections/Hero"
-import About from "../components/sections/About"
-import Projects from "../components/sections/Projects"
-import ContactCTA from "../components/sections/ContactCTA"
+import { useState } from "react";
+
+import Navbar from "../components/layout/Navbar";
+import type { Language } from "../types/language";
 
 function Home() {
+  // Controla o idioma atual do site.
+  const [language, setLanguage] = useState<Language>("pt-BR");
+
+  // Função temporária até o modal de contato ser criado.
+  function handleOpenContactModal() {
+    window.alert( language === "pt-BR" ? 
+      "Aqui vamos abrir o modal de contato." : 
+      "The contact modal will open here." );
+  }
+
   return (
-    <div className="min-h-screen bg-neutral-950 text-white">
-      <Navbar />
+    <div id="home" className="min-h-screen bg-background text-brand-700">
+      <Navbar
+        language={language}
+        onLanguageChange={setLanguage}
+        onContactClick={handleOpenContactModal}
+      />
+
       <main>
-        <Hero />
-        <About />
-        <Projects />
-        <ContactCTA />
+        <section id="about" />
+        <section id="projects" />
       </main>
-      <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

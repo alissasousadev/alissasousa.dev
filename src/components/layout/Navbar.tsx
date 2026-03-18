@@ -25,7 +25,7 @@ const socialLinks = [
     isExternal: true,
   },
   {
-    href: "mailto:alissiasuelen@hotmail.com",
+    href: "mailto:alissasousa.dev@outlook.com",
     ariaLabel: "Email",
     icon: Mail,
     isExternal: false,

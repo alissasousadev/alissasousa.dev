@@ -168,7 +168,7 @@ function Navbar({
               className="h-10 w-10 object-contain md:h-12 md:w-12"
             />
 
-            <span className="font-primary text-[1.2rem] font-bold text-primary md:text-[1.35rem]">
+            <span className="font-primary text-[1.2rem] font-bold text-primary transition-colors duration-300 hover:text-accent md:text-[1.35rem]">
               Alissa Sousa
             </span>
           </a>

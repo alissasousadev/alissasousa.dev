@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import footerShape from "../../assets/footer.svg";
 
 function Footer() {
@@ -46,6 +46,33 @@ function Footer() {
                 strokeWidth={1}
               />
             </a>
+
+             <a
+              href="mailto:alissasousa.dev@outlook.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Email"
+              className="text-white transition-opacity duration-200 hover:opacity-80"
+            >
+              <Mail
+                className="h-4 w-4 sm:h-[18px] sm:w-[18px] md:h-5 md:w-5"
+                strokeWidth={1}
+              />
+            </a>
+
+                         <a
+              href="https://www.instagram.com/eualissasousa"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="text-white transition-opacity duration-200 hover:opacity-80"
+            >
+              <Instagram
+                className="h-4 w-4 sm:h-[18px] sm:w-[18px] md:h-5 md:w-5"
+                strokeWidth={1}
+              />
+            </a>
+
           </div>
         </div>
       </div>
